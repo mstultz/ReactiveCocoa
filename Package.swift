@@ -8,7 +8,7 @@ let package = Package(
         .macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)
     ],
     products: [
-        .library(name: "ReactiveCocoa", targets: ["ReactiveCocoa"])
+        .library(name: "ReactiveCocoa", type: .dynamic, targets: ["ReactiveCocoa"])
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift", from: "6.2.0"),
